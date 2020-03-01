@@ -22,5 +22,6 @@ PORT_DEPENDS=	mpv:multimedia/mpv \
 BUILD_DEPENDS=	${PORT_DEPENDS}
 RUN_DEPENDS=	${PORT_DEPENDS} \
 		coreutils>=0:sysutils/coreutils
+MYSQL_RUN_DEPENDS=	${QT_PLUGINDIR}/sqldrivers/libqsqlmysql.so:databases/qt5-sqldrivers-mysql
 							
 .include <bsd.port.mk>
